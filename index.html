@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id='calculator'>
+        <input type="text" id="display" readonly>
+        <div id="buttons">
+            <button onclick="clearDisplay()" id="gray"><span id="margin">AC</span></button>
+            <button onclick="posneg()" id="gray"><span id="margin">+/-</span></button>
+            <button onclick="appendToDisplay('%')" id="gray"><span id="margin">%</span></button>
+            <button onclick="appendToDisplay('/')" id="orange"><span id="margin">/</span></button>
+            <button onclick="appendToDisplay('7')" id="black"><span id="margin">7</span></button>
+            <button onclick="appendToDisplay('8')" id="black"><span id="margin">8</span></button>
+            <button onclick="appendToDisplay('9')" id="black"><span id="margin">9</span></button>
+            <button onclick="appendToDisplay('*')" id="orange"><span id="margin">X</span></button>
+            <button onclick="appendToDisplay('4')" id="black"><span id="margin">4</span></button>
+            <button onclick="appendToDisplay('5')" id="black"><span id="margin">5</span></button>
+            <button onclick="appendToDisplay('6')" id="black"><span id="margin">6</span></button>
+            <button onclick="appendToDisplay('-')" id="orange"><span id="margin">-</span></button>
+            <button onclick="appendToDisplay('1')" id="black"><span id="margin">1</span></button>
+            <button onclick="appendToDisplay('2')" id="black"><span id="margin">2</span></button>
+            <button onclick="appendToDisplay('3')" id="black"><span id="margin">3</span></button>
+            <button onclick="appendToDisplay('+')" id="orange"><span id="margin">+</span></button>  
+        </div>
+        <div id="buttons2">
+            <button onclick="appendToDisplay('0')" id="black2"><span id="margin">0</span></button>
+            <button onclick="appendToDisplay('.')" id="black"><span id="margin">.</span></button>
+            <button onclick="calculate()" id="orange"><span id="margin">=</span></button>  
+        </div>  
+    </div>
+    <script src="calculator.js"></script>
+</body>
+</html>
